@@ -13,33 +13,16 @@
 
 <body>
   <header>
-    <% include ./partials/header%>
+    <link rel="stylesheet" href="styles.css">
   </header>
-  <h1>Hello akouvi focus on the code</h1>
-  <p>
-    <!-- <%= tagline %> -->
-  </p>
-  <!-- <button id="create" href="/getAUser">Create a User</button> -->
-  <!-- <button id="get">get a User</button> -->
-  <!-- <button id="update">Updat a User</button> -->
-  <!-- <button id="delete">Delete a User</button> -->
+  <form action="" method="post"></form>
+  <div id="messages"></div>
+  <div id="holder">
+    <p>Message Here:</p>
+    <textarea name="message" id="textarea" cols="30" rows="10"></textarea>
+    <button id="enter">Enter</button>
 
-
-  <!-- <ul>
-    <% drinks.forEach(function(drink){ %>
-      <li>
-        <%= drink.name%> -
-          <%= drink.drunkness%>
-      </li> %>
-      <%}); %>
-  </ul> -->
-
-
-  <footer>
-    <% include ./partials/footer%>
-  </footer>
-
-
+  </div>
 
   <script src="script.js"></script>
 </body>

@@ -6,17 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Login</title>
-  <link rel="stylesheet" href="styles.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <form action="">
-    <h2 for="">Please Log in</h2>
-    <input placeholder="Username">
-    <input placeholder="Password">
+  <form action="/index" method="POST">
+    <h2>Please Log in</h2>
+    <input placeholder="Username" name="name">
+    <input placeholder="Password" name="password">
     <br />
+    <button id="login">logIn</button>
     <button id="signup">signUp</button>
+
+
     <!-- <script src="script.js"></script> -->
   </form>
   <% include ./partials/footer%>
